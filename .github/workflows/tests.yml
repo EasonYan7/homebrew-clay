@@ -1,0 +1,21 @@
+name: Cask checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  style:
+    runs-on: macos-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+      - uses: actions/checkout@v4
+      - name: Link tap
+        run: |
+          tap_dir="$(brew --repository)/Library/Taps/easonyan7"
+          mkdir -p "$tap_dir"
+          ln -s "$GITHUB_WORKSPACE" "$tap_dir/homebrew-clay"
+      - run: brew trust --tap easonyan7/clay
+      - run: brew style --cask easonyan7/clay
+      - run: brew audit --cask --strict --online easonyan7/clay/clay
