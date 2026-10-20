@@ -1,4 +1,4 @@
-cask "clay" do
+cask "clay-editor" do
   arch arm: "arm64", intel: "x64"
 
   version "0.1.1"
