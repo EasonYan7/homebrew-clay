@@ -18,4 +18,4 @@ jobs:
           ln -s "$GITHUB_WORKSPACE" "$tap_dir/homebrew-clay"
       - run: brew trust --tap easonyan7/clay
       - run: brew style --cask easonyan7/clay
-      - run: brew audit --cask --strict --online easonyan7/clay/clay
+      - run: brew audit --cask --strict --online easonyan7/clay/clay-editor
