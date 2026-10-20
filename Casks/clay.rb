@@ -1,9 +1,9 @@
 cask "clay" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.0"
-  sha256 arm:   "80072ee8276b19b2419c3673db9a061e09335f440e8373c203fa4daf3b1bc1c6",
-         intel: "388941a4aa9bfec7a599773b94da73a15199400b471035f0c5b1edd1105bc1ec"
+  version "0.1.1"
+  sha256 arm:   "9068bfb215b3976befbeaeff8991cf240b4bf64a0cd3b8035a1768e3324e5027",
+         intel: "2b6b46806dc46fed1ed6e22226879f362d64c3e6790fc182ca71c12c2662ddd8"
 
   url "https://github.com/EasonYan7/clay/releases/download/v#{version}/Clay-#{version}-#{arch}.dmg"
   name "Clay"
