@@ -1,9 +1,9 @@
 cask "clay-editor" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.1"
-  sha256 arm:   "9068bfb215b3976befbeaeff8991cf240b4bf64a0cd3b8035a1768e3324e5027",
-         intel: "2b6b46806dc46fed1ed6e22226879f362d64c3e6790fc182ca71c12c2662ddd8"
+  version "0.1.2"
+  sha256 arm:   "97703cd6679e52d08b5a74caa32c926316625caa54365d9976a9c79e10246c30",
+         intel: "56c553304045b8a6a99b68694c22438470f5158869d274ff333f055f5d3c274d"
 
   url "https://github.com/EasonYan7/clay/releases/download/v#{version}/Clay-#{version}-#{arch}.dmg"
   name "Clay"
